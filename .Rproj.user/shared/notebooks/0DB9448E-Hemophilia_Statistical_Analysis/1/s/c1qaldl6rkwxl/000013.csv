@@ -1,0 +1,8 @@
+"0","#| output: false"
+"0","#Subtype can be cleaned through case standardization"
+"0","variants_clean <- variants_clean %>%"
+"0","  mutate(subtype = str_to_lower(subtype))"
+"0","variants_clean %>%"
+"0","  count(subtype) %>%"
+"0","  mutate(proportion = n / sum(n)) %>% "
+"0","  arrange(desc(n))"

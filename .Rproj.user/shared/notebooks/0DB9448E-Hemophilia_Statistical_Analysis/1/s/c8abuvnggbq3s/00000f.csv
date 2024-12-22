@@ -1,0 +1,3 @@
+"0","# Filter the variants_clean dataset to only include mild, moderate, and severe cases"
+"0","variants_clean <- variants_clean %>%"
+"0","  filter(reported_clinical_severity %in% c(""mild"", ""moderate"", ""severe""))"

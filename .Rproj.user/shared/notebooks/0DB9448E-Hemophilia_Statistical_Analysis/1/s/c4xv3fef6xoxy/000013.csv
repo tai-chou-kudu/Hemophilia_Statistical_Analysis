@@ -1,0 +1,6 @@
+"0","#| output: false"
+"0","variants_clean %>%"
+"0","  filter(!is.na(mature_protein)) %>% "
+"0","  count(mature_protein) %>%"
+"0","  mutate(proportion = n / sum(n)) %>% "
+"0","  arrange(desc(n))"

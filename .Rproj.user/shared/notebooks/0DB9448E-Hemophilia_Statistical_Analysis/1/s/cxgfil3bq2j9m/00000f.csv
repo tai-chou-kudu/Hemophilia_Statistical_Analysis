@@ -1,0 +1,11 @@
+"0","ggplot(severe_hemo_cleaned, aes(x = hg19_end)) +
+  geom_histogram(binwidth = 1000000, fill = ""skyblue"", color = ""black"") +
+  labs(title = ""Distribution of Variant End Positions"",
+       x = ""End Position (hg19)"",
+       y = ""Count"") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme_minimal()
+"
+"2","Warning:"
+"2"," [38;5;232mRemoved 1700 rows containing non-finite outside the scale range (`stat_bin()`).[39m
+"

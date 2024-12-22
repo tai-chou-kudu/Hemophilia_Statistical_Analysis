@@ -1,0 +1,5 @@
+"0","severity_counts <- variants_clean %>%"
+"0","  count(severity_group)"
+"0",""
+"0","# View the counts"
+"0","print(severity_counts)"

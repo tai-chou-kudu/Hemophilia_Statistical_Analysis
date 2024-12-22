@@ -1,0 +1,2 @@
+"0","variants_clean <- variants_clean %>%"
+"0","  filter(!str_detect(hg19_coordinates, ""[^0-9._-]""))"

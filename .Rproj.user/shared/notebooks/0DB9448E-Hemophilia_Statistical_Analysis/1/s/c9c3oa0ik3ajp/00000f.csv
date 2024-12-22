@@ -1,0 +1,7 @@
+"0","#| output: false"
+"0","variants_clean <- variants_clean %>%"
+"0","  mutate(mechanism = str_to_lower(mechanism))"
+"0","mechanism_count <- variants_clean %>%"
+"0","  count(mechanism) %>%"
+"0","  mutate(proportion = n / sum(n)) %>% "
+"0","  arrange(desc(n))"

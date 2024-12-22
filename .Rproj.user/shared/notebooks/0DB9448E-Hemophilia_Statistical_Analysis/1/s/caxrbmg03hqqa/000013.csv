@@ -1,0 +1,7 @@
+"0","#| output: false"
+"0","variants_clean <- variants_clean %>%"
+"0","  mutate(in_poly_a = str_to_lower(in_poly_a))"
+"0","variants_clean %>%"
+"0","  count(in_poly_a) %>%"
+"0","  mutate(proportion = n / sum(n)) %>% "
+"0","  arrange(desc(n))"

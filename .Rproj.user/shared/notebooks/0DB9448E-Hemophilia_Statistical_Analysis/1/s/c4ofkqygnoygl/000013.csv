@@ -1,0 +1,4 @@
+"0","#top 5 frequency for each variable"
+"0","purrr::map_dfr(variants_clean, ~as.data.frame"
+"0","               (head(sort(table(.), decreasing = TRUE), 5)), "
+"0","               .id = ""variable"")"

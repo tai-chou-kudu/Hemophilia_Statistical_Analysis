@@ -1,0 +1,30 @@
+"0","ggplot(variants_clean, "
+"0","       aes(x = hg19_start, xend = hg19_end, y = region_type)) +"
+"0","  geom_segment(aes(yend = region_type), alpha = 0.7) +"
+"0","  labs(title = ""HG19 Genomic Start and End Positions by Variant Location Type"","
+"0","       x = ""Genomic Coordinate (HG19)"","
+"0","       y = ""Variant Location Type"") +"
+"0","  theme_minimal() +"
+"0","  scale_x_continuous(labels = scales::scientific, "
+"0","                     breaks = seq(min(variants_clean$hg19_start), "
+"0","                                  max(variants_clean$hg19_end), "
+"0","                                  length.out = 10))"
+"2","Warning:"
+"2"," Unknown or uninitialised column: `hg19_start`.
+"
+"2","Warning in min(variants_clean$hg19_start) :"
+"2","
+ "
+"2"," no non-missing arguments to min; returning Inf
+"
+"2","Warning:"
+"2"," Unknown or uninitialised column: `hg19_end`.
+"
+"2","Warning in max(variants_clean$hg19_end) :"
+"2","
+ "
+"2"," no non-missing arguments to max; returning -Inf
+"
+"2","Error in seq.default(min(variants_clean$hg19_start), max(variants_clean$hg19_end),  : 
+  'from' must be a finite number
+"

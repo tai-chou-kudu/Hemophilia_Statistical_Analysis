@@ -1,0 +1,50 @@
+"0","# Clean data: Apply clean_names to the dataset to convert data to snake case"
+"0","variants <- variants %>%"
+"0","  clean_names()"
+"0",""
+"0","# Select relevant columns"
+"0","variants_clean <- variants %>%"
+"0","  select("
+"0","    hgvs_c_dna, hg19_coordinates, hgvs_protein, mature_protein, variant_type,"
+"0","    mechanism, exon, codon, domain, subtype, in_poly_a, "
+"0","    reported_clinical_severity, year_reported"
+"0","  )"
+"0",""
+"0","# Convert explanatory variables to factors (categorical)"
+"0","variants_clean <- variants_clean %>%"
+"0","  mutate(across("
+"0","    c("
+"0","    variant_type, mechanism, exon, domain, subtype,"
+"0","    in_poly_a, reported_clinical_severity"
+"0","    ), as.factor"
+"0","  ))"
+"0",""
+"0","# Make sure that `year_reported` is numeric"
+"0","variants_clean <- variants_clean %>%"
+"0","  mutate(year_reported = as.numeric(year_reported))"
+"0",""
+"0","skim(variants_clean)"
+"1","── Data Summary ────────────────────────
+"
+"1","                           Values        
+"
+"1","Name                       variants_clean
+"
+"1","Number of rows             4050          
+"
+"1","Number of columns          13            
+"
+"1","_______________________                  
+"
+"1","Column type frequency:                   
+"
+"1","  character                5             
+"
+"1","  factor                   7             
+"
+"1","  numeric                  1             
+"
+"1","________________________                 
+"
+"1","Group variables            None          
+"
